@@ -2,13 +2,13 @@ let fs = require('fs')
 let chalk = require('chalk')
 
 global.owner = [
-  ['62895330379186'],
-  ['62895330379186'],
-  ['62895330379186', 'Owner', true]
+  ['6282127081926'],
+  ['6282127081926'],
+  ['6282127081926', 'Owner', true]
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
-global.mods = [] // Want some help?
-global.prems = [] // Premium user has unlimited limit
+global.mods = ['6282127081926'] // Want some help?
+global.prems = ['6282127081926'] // Premium user has unlimited limit
 global.APIs = { // API Prefix
   // name: 'https://website'
   nrtm: 'https://nurutomo.herokuapp.com',
@@ -30,7 +30,7 @@ global.APIKeys = { // APIKey Here
   'https://api.neoxr.eu.org/': 'jVEMyB2ITJ',
   'https://api.zeks.me': 'apikeyaine',
   'https://pencarikode.xyz': 'pais',
-  'https://melcanz.com': 'ZZBk7EBb',
+  'https://melcanz.com': 'ZZBk7EBb', 
   'https://leyscoders-api.herokuapp.com': 'dappakntlll',
   'https://x-restapi.herokuapp.com': 'BETA'
 }
@@ -40,8 +40,8 @@ process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
 const spack = fs.readFileSync("lib/exif.json")
 const stickerpack = JSON.parse(spack)
 if (stickerpack.spackname == '') {
-  var sticker_name = '@ainee_bot'
-  var sticker_author = 'Aine'
+  var sticker_name = 'Sticker'
+  var sticker_author = 'Me'
 } else {
   var sticker_name = stickerpack.spackname
   var sticker_author = stickerpack.sauthor
@@ -58,7 +58,7 @@ fs.watchFile(file_exif, () => {
 // Sticker WM
 global.packname = sticker_name
 global.author = sticker_author
-global.wm = '© Aine'
+global.wm = '© Ikmal'
 
 global.multiplier = 1000 // The higher, The harder levelup
 
