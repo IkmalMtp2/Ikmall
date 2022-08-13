@@ -41,13 +41,13 @@ Hai, %ucapan %name! 👋
 %wib WIB
 %wita WITA
 %wit WIT
-*Hari:* %week
-*Tanggal:* %date
-*Uptime:* %uptime (%muptime)
+*🖼️Hari:* %week
+*📅Tanggal:* %date
+*🎂Uptime:* %uptime (%muptime)
 
-*Limit:* %limit
-*Level:* %level
-*XP:* %exp
+*💳Limit:* %limit
+*🎁Level:* %level
+*🔋XP:* %exp
 %readmore`.trimStart(),
   header: ' *%category*',
   body: ' • %cmd %islimit %isPremium',
